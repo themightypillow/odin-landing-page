@@ -1,0 +1,36 @@
+:root {
+  --dk-navy: #1F2937;
+  --white: #F9FAF8;
+  --grey: #E5E7EB;
+  --blue: #3882F6;
+  --dk-grey: #1F2937;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+nav {
+  background-color: var(--dk-navy);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+}
+
+nav > h3 {
+  color: var(--white);
+  font-size: 24px;
+}
+
+nav a {
+  color: var(--grey);
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
+}
