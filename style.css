@@ -2,8 +2,8 @@
   --dk-navy: #1F2937;
   --white: #F9FAF8;
   --grey: #E5E7EB;
+  --dk-grey: #6D747D;
   --blue: #3882F6;
-  --dk-grey: #1F2937;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
   margin: 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
   margin: 0;
 }
 
@@ -25,12 +25,54 @@ nav {
 
 nav > h3 {
   color: var(--white);
-  font-size: 24px;
+  font-size: 20px;
 }
 
 nav a {
   color: var(--grey);
   text-decoration: none;
-  font-size: 18px;
-  margin: 0 10px;
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+#hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  background-color: var(--dk-navy);
+  padding: 100px 100px;
+}
+
+#hero h1 {
+  color: var(--white);
+  font-weight: 900;
+  font-size: 40px;
+}
+
+#hero h1 + p {
+  color: var(--grey);
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+#hero button {
+  background-color: var(--blue);
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  font-weight: 700;
+  padding: 4px 25px;
+}
+
+#hero > :last-child {
+  background-color: var(--dk-grey);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+}
+
+#hero > :last-child > p {
+  white-space: nowrap;
+  margin: 0 75px;
+  font-size: 15px;
 }
