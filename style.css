@@ -4,6 +4,13 @@
   --grey: #E5E7EB;
   --dk-grey: #6D747D;
   --blue: #3882F6;
+  --x-sm: 13px;
+  --sm: 15px;
+  --md: 20px;
+  --x-lg: 40px;
+  --light: 300;
+  --bold: 700;
+  --x-bold: 900;
 }
 
 body {
@@ -11,7 +18,7 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, figure {
   margin: 0;
 }
 
@@ -25,14 +32,14 @@ nav {
 
 nav > h3 {
   color: var(--white);
-  font-size: 20px;
+  font-size: var(--md);
 }
 
 nav a {
   color: var(--grey);
   text-decoration: none;
-  font-size: 15px;
-  margin-left: 20px;
+  font-size: var(--sm);
+  margin-left: var(--md);
 }
 
 #hero {
@@ -45,13 +52,13 @@ nav a {
 
 #hero h1 {
   color: var(--white);
-  font-weight: 900;
-  font-size: 40px;
+  font-weight: var(--x-bold);
+  font-size: var(--x-lg);
 }
 
 #hero h1 + p {
   color: var(--grey);
-  font-size: 15px;
+  font-size: var(--sm);
   margin-bottom: 10px;
 }
 
@@ -60,7 +67,7 @@ nav a {
   border: none;
   border-radius: 5px;
   color: var(--white);
-  font-weight: 700;
+  font-weight: var(--bold);
   padding: 4px 25px;
 }
 
@@ -74,5 +81,42 @@ nav a {
 #hero > :last-child > p {
   white-space: nowrap;
   margin: 0 75px;
-  font-size: 15px;
+  font-size: var(--sm);
+}
+
+#info {
+  padding: 30px 150px 75px 150px;
+}
+
+#info > h2 {
+  color: var(--dk-navy);
+  font-weight: var(--x-bold);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#info > div {
+  display: flex;
+  justify-content: space-around;
+}
+
+#info img {
+  width: 125px;
+  height: 125px;
+  border: 3px solid var(--blue);
+  border-radius: 7px;
+}
+
+#info figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 131px;
+}
+
+#info figcaption {
+  color: var(--dk-grey);
+  font-size: var(--x-sm);
+  text-align: center;
 }
