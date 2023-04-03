@@ -7,6 +7,7 @@
   --x-sm: 13px;
   --sm: 15px;
   --md: 20px;
+  --lg: 25px;
   --x-lg: 40px;
   --light: 300;
   --bold: 700;
@@ -119,4 +120,21 @@ nav a {
   color: var(--dk-grey);
   font-size: var(--x-sm);
   text-align: center;
+}
+
+#quote {
+  background-color: var(--grey);
+  color: var(--dk-navy);
+  padding: 75px 200px;
+}
+
+#quote > :first-child {
+  font-size: var(--lg);
+  font-weight: var(--light);
+  font-style: italic;
+}
+
+#quote > :last-child {
+  font-weight: var(--bold);
+  text-align: right;
 }
