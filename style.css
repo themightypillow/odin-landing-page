@@ -4,11 +4,11 @@
   --grey: #E5E7EB;
   --dk-grey: #6D747D;
   --blue: #3882F6;
-  --x-sm: 13px;
-  --sm: 15px;
-  --md: 20px;
-  --lg: 25px;
-  --x-lg: 40px;
+  --x-sm: 15px;
+  --sm: 18px;
+  --md: 24px;
+  --lg: 36px;
+  --x-lg: 48px;
   --light: 300;
   --bold: 700;
   --x-bold: 900;
@@ -32,7 +32,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 100px;
+  padding: 2vh 10vw;
 }
 
 nav > h3 {
@@ -50,9 +50,10 @@ nav a {
 #hero {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 40px;
   background-color: var(--dk-navy);
-  padding: 100px 100px;
+  padding: 10vh 10vw;
 }
 
 #hero h1 {
@@ -84,24 +85,27 @@ nav a {
 
 #hero > :last-child > p {
   white-space: nowrap;
-  margin: 0 75px;
+  margin: 8vh 10vw;
   font-size: var(--sm);
 }
 
 #info {
-  padding: 30px 150px 75px 150px;
+  padding: 5vh 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #info > h2 {
   color: var(--dk-navy);
   font-weight: var(--x-bold);
-  text-align: center;
+  font-size: 30px;
   margin-bottom: 30px;
 }
 
 #info > div {
   display: flex;
-  justify-content: space-around;
+  gap: 3vw;
 }
 
 #info img {
@@ -112,10 +116,6 @@ nav a {
 }
 
 #info figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
   width: 131px;
 }
 
@@ -128,7 +128,7 @@ nav a {
 #quote {
   background-color: var(--grey);
   color: var(--dk-navy);
-  padding: 75px 200px;
+  padding: 10vh 20vw;
 }
 
 #quote > :first-child {
@@ -140,10 +140,11 @@ nav a {
 #quote > :last-child {
   font-weight: var(--bold);
   text-align: right;
+  font-size: var(--md);
 }
 
 #signup {
-  padding: 75px;
+  padding: 8vh 10vw;
 }
 
 #signup > div {
@@ -174,5 +175,5 @@ footer {
   color: var(--white);
   font-size: var(--sm);
   text-align: center;
-  padding: 25px 0;
+  padding: 3vh 0;
 }
